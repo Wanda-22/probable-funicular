@@ -1,0 +1,14 @@
+h3{
+    font-size: 35px !important;
+    font-family: 'Haettenschweiler';
+}
+button{
+    font-size: 30px !important;
+    font-family: Impact;
+}
+canvas{
+    border: indianred 3px dotted;
+}
+body{
+    text-align: center;
+}
