@@ -13,24 +13,24 @@ function setup() {
     s.hide();
 
     p=ml5.poseNet(s,loaded);
-    p.on('pose',ans1);
+    p.on('pose',ans);
 }
 
 function loaded() {
     console.log('posenet is loaded');   
 }
 
-function ans1(result) {
-    if (result.lenght>0) {
+function ans(result) {
+    if(result.length>0) {
         console.log(result);
-        lipx=result[0].pose.nose.x+15;
+        lipx=result[0].pose.nose.x-25;
         lipy=result[0].pose.nose.y+15;
     }
 }
 
 function draw() {
     image(s,0,0,500,500);
-    image(x,lipx,lipy,30,30);
+    image(x,lipx,lipy,90,50);
 }
 
 function snap() {
